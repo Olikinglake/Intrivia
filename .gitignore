@@ -1,4 +1,4 @@
-backend/.settings
+backend/.settings/
 backend/target/
 backend/.classpath
 backend/.factorypath
