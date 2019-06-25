@@ -1,4 +1,4 @@
-package com.qa.todo;
+package com.Ollie.Intrivia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

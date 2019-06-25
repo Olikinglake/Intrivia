@@ -1,4 +1,4 @@
-package com.qa.todo.business;
+package com.Ollie.Intrivia.business;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,29 +6,29 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.qa.todo.domain.Todo;
-import com.qa.todo.persistence.TodoRepository;
+import com.Ollie.Intrivia.domain.Intrivia;
+import com.Ollie.Intrivia.persistence.IntriviaRepository;
 
 @Service
-public class TodoService implements ITodoService {
+public class IntriviaService implements IIntriviaService {
 	
 	@Autowired
-	private TodoRepository todoRepository;
+	private IntriviaRepository IntriviaRepository;
 	
-	public List<Todo> getTodo() {
-		return todoRepository.findAll();
+	public List<Intrivia> getIntrivia() {
+		return IntriviaRepository.findAll();
 	}
 
-	public void deleteTodo(Long id) {
-		todoRepository.deleteById(id);
+	public void deleteIntrivia(Long id) {
+		IntriviaRepository.deleteById(id);
 		
 	}
 
-	public Todo addTodo(Todo todo) {
-		return todoRepository.save(todo);
+	public Intrivia addIntrivia(Intrivia intrivia) {
+		return IntriviaRepository.save(intrivia);
 	}
 
-	public Optional<Todo> findById(long id) {
-		return todoRepository.findById(id);
+	public Optional<Intrivia> findById(long id) {
+		return IntriviaRepository.findById(id);
 	}
 }

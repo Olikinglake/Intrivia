@@ -1,4 +1,4 @@
-package com.qa.todo.domain;
+package com.Ollie.Intrivia.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,22 +6,25 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Todo {
+public class Intrivia {
 	
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	private String todoName;
+	private String Nickname;
+	private Integer Score;
+
 	
-	public Todo() 
+	public Intrivia() 
 	{
 		
 	}
 	
-	public Todo(Long id, String todoName) 
+	public Intrivia(Long id, String Nickname, Integer Score) 
 	{
 		this.id = id;
-		this.todoName = todoName;
+		this.Nickname = Nickname;
+		this.Score = Score;
 	}
 	
 	public Long getId() {
@@ -32,16 +35,24 @@ public class Todo {
 		this.id = id;
 	}
 
-	public String getTodoName() {
-		return todoName;
+	public String getNickname() {
+		return Nickname;
 	}
 
-	public void setTodoName(String todoName) {
-		this.todoName = todoName;
+	public void setNickname(String Nickname) {
+		this.Nickname = Nickname;
+	}
+
+	public Integer Score() {
+		return Score;
+	}
+
+	public void Score(Integer Score) {
+		this.Score = Score;
 	}
 
 	@Override
 	public String toString() {
-		return "Todo [id=" + id + ", todoName=" + todoName + "]";
+		return "Intrivia [id=" + id + ", Nickname=" + Nickname + ", Score=" + "]";
 	}
 }

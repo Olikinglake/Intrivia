@@ -37,7 +37,7 @@ function displayquestions(data) {
     i = 0; j = 0; r2=10; n=4;
 
     while (i < 4 && j < 3 && n>=1) {
-        let r = Math.floor(Math.random() * 4);
+        let r = Math.floor(Math.random() * n);
         if(r==r2){ 
         }
         else{
@@ -50,11 +50,11 @@ function displayquestions(data) {
         }
         r2=r;      
     }
-
+  
     i = 0; j = 0; r2=10; n=4;
 
     while (i < 4 && j < 3 && n>=1) {
-        let r = Math.floor(Math.random() * 4);
+        let r = Math.floor(Math.random() * n);
         if(r==r2){ 
         }
         else{
@@ -71,7 +71,7 @@ function displayquestions(data) {
     i = 0; j = 0; r2=10; n=4;
 
     while (i < 4 && j < 3 && n>=1) {
-        let r = Math.floor(Math.random() * 4);
+        let r = Math.floor(Math.random() * n);
         if(r==r2){ 
         }
         else{
@@ -85,39 +85,39 @@ function displayquestions(data) {
         r2=r;      
     }
 
-    i = 0; j = 0; r2=10; n=4;
+    // i = 0; j = 0; r2=10; n=4;
 
-    while (i < 4 && j < 3 && n>=1) {
-        let r = Math.floor(Math.random() * 4);
-        if(r==r2){ 
-        }
-        else{
-        if (i == 0) {
-            document.getElementById(array4[r]).innerHTML = data.results[3].correct_answer;
-        }
-        else {
-            document.getElementById(array4[r]).innerHTML = data.results[3].incorrect_answers[j]; j++;
-        }i++;array4.splice(r, 1); n--;
-        }
-        r2=r;      
-    }
+    // while (i < 4 && j < 3 && n>=1) {
+    //     let r = Math.floor(Math.random() * n);
+    //     if(r==r2){ 
+    //     }
+    //     else{
+    //     if (i == 0) {
+    //         document.getElementById(array4[r]).innerHTML = data.results[3].correct_answer;
+    //     }
+    //     else {
+    //         document.getElementById(array4[r]).innerHTML = data.results[3].incorrect_answers[j]; j++;
+    //     }i++;array4.splice(r, 1); n--;
+    //     }
+    //     r2=r;      
+    // }
 
-    i = 0; j = 0; r2=10; n=4;
+    // i = 0; j = 0; r2=10; n=4;
 
-    while (i < 4 && j < 3 && n>=1) {
-        let r = Math.floor(Math.random() * 4);
-        if(r==r2){ 
-        }
-        else{
-        if (i == 0) {
-            document.getElementById(array5[r]).innerHTML = data.results[4].correct_answer;
-        }
-        else {
-            document.getElementById(array5[r]).innerHTML = data.results[4].incorrect_answers[j]; j++;
-        }i++;array5.splice(r, 1); n--;
-        }
-        r2=r;      
-    }
+    // while (i < 4 && j < 3 && n>=1) {
+    //     let r = Math.floor(Math.random() * n);
+    //     if(r==r2){ 
+    //     }
+    //     else{
+    //     if (i == 0) {
+    //         document.getElementById(array5[r]).innerHTML = data.results[4].correct_answer;
+    //     }
+    //     else {
+    //         document.getElementById(array5[r]).innerHTML = data.results[4].incorrect_answers[j]; j++;
+    //     }i++;array5.splice(r, 1); n--;
+    //     }
+    //     r2=r;      
+    // }
 
     // i = 0; j = 0; r2=10; n=4;
 

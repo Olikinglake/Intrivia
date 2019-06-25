@@ -1,18 +1,18 @@
-package com.qa.todo.business;
+package com.Ollie.Intrivia.business;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.qa.todo.domain.Todo;
+import com.Ollie.Intrivia.domain.Intrivia;
 
-public interface ITodoService {
+public interface IIntriviaService {
 
-	List<Todo> getTodo();
+	List<Intrivia> getIntrivia();
 
-	void deleteTodo(Long id);
+	void deleteIntrivia(Long id);
 
-	Todo addTodo(Todo todo);
+	Intrivia addIntrivia(Intrivia intrivia);
 
-	Optional<Todo> findById(long id);
+	Optional<Intrivia> findById(long id);
 
 }

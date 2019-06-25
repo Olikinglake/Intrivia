@@ -1,11 +1,11 @@
-package com.qa.todo.persistence;
+package com.Ollie.Intrivia.persistence;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.qa.todo.domain.Todo;
+import com.Ollie.Intrivia.domain.Intrivia;
 
 @Repository
-public interface TodoRepository extends JpaRepository<Todo, Long> {
+public interface IntriviaRepository extends JpaRepository<Intrivia, Long> {
 	
 }
