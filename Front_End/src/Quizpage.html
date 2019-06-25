@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="Quizpage.css" rel="stylesheet">
+    <title>Intrivia</title>
+    <link rel="icon" type="image/png" href="Intrivia logo.png">
+</head>
+
+<body>
+    <div style="margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)" onclick="window.location.href='Intrivia.html'">
+        <IMG SRC="Intrivia logo.png" ALT="some text" WIDTH=200 HEIGHT=200>
+    </div>
+    <p style="margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px" id="nicknamer">Nickname:</p>
+    <p style="margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px" id="nameSpan"></p>
+    <p style="margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 81%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px" id="timeleft">Time left: </p>
+    <p style="margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 86%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px" id="count"></p>
+    <form onsubmit="return handleSubmit2(this)" id="formquiz">
+        <div style="margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 1:
+        </div>
+        <p id="q1" style="margin: 0;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="ba1" name="ba1" class="qset1" style="margin: 0;
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="ba2" name="ba2" class="qset1" style="margin: 0;
+    position: absolute;
+    top: 29%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="ba3" name="ba3" class="qset1" style="margin: 0;
+    position: absolute;
+    top: 29%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="ba4" name="ba4" class="qset1" style="margin: 0;
+    position: absolute;
+    top: 29%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <div style="margin: 0;
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 2:
+        </div>
+        <p id="q2" style="margin: 0;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="bb1" name="bb1" class="qset2"style="margin: 0;
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bb2" name="bb2" class="qset2" style="margin: 0;
+    position: absolute;
+    top: 41%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bb3" name="bb3" class="qset2" style="margin: 0;
+    position: absolute;
+    top: 41%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bb4" name="bb4" class="qset2" style="margin: 0;
+    position: absolute;
+    top: 41%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <div style="margin: 0;
+    position: absolute;
+    top: 49%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 3:
+        </div>
+        <p id="q3" style="margin: 0;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="bc1" name="bc1" class="qset3" style="margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bc2" name="bc2" class="qset3" style="margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bc3" name="bc3" class="qset3" style="margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bc4" name="bc4" class="qset3" style="margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <div style="margin: 0;
+    position: absolute;
+    top: 61%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 4:
+        </div>
+        <p id="q4" style="margin: 0;
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="bd1" name="bd1" class="qset4" style="margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bd2" name="bd2" class="qset4" style="margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bd3" name="bd3" class="qset4" style="margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bd4" name="bd4" class="qset4" style="margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <div style="margin: 0;
+    position: absolute;
+    top: 73%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 5:
+        </div>
+        <p id="q5" style="margin: 0;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="be1" name="be1" class="qset5" style="margin: 0;
+    position: absolute;
+    top: 77%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="be2" name="be2" class="qset5" style="margin: 0;
+    position: absolute;
+    top: 77%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="be3" name="be3" class="qset5" style="margin: 0;
+    position: absolute;
+    top: 77%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="be4" name="be4" class="qset5" style="margin: 0;
+    position: absolute;
+    top: 77%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <div style="margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:20px">
+            Question 6:
+        </div>
+        <p id="q6" style="margin: 0;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); font-size:20px"></p>
+        <button type="button" id="bf1" name="bf1" class="qset6" style="margin: 0;
+    position: absolute;
+    top: 89%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bf2" name="bf2" class="qset6" style="margin: 0;
+    position: absolute;
+    top: 89%;
+    left: 38.25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bf3" name="bf3" class="qset6" style="margin: 0;
+    position: absolute;
+    top: 89%;
+    left: 61.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="button" id="bf4" name="bf4" class="qset6" style="margin: 0;
+    position: absolute;
+    top: 89%;
+    left: 84.75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px"></button>
+        <button type="submit" id="bsub" style="margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); font-size:14px">SUBMIT</button>
+    </form>
+
+    <script src="Quizpage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="Intrivia.css" rel="stylesheet">
+    <title>Intrivia</title>
+    <link rel="icon" 
+      type="image/png" href="Intrivia logo.png">
+</head>
+
+<body>
+    <div style="margin: 0;
+position: absolute;
+top: 10%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)" onclick="window.location.href='Intrivia.html'">
+        <IMG SRC="Intrivia logo.png" ALT="some text" WIDTH=200 HEIGHT=200>
+    </div>
+    <div style="margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  text-decoration: underline; font-size: 25px">
+        Enter nickname
+    </div>
+    <form onsubmit="return handleSubmit(this)">
+        <input type="text" name="nickname" id="nickname" pattern="[A-Za-z0-9]{1,20}" style="font-size:20px" required>
+        <button style="background-color:blue; color:white" ; type="submit" id="StartButton" ;>Start Quiz</button>
+    </form>
+
+    <div style="margin: 0; 
+position: absolute;
+top: 75%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)" onclick="window.location.href='DailyLeaderboard.html'">
+        <button style="background-color:blue; color:white" ; type="button" ;>Daily Leaderboard</button>
+    </div>
+    <div style="margin: 0; 
+position: absolute;
+top: 90%;
+left: 10%;
+margin-right: -50%;
+transform: translate(-50%, -50%)">
+        <a href="">Terms and Conditions</a>
+    </div>
+    <div style="margin: 0; 
+position: absolute;
+top: 90%;
+right: 1%;
+margin-left: -50%;
+transform: translate(-50%, -50%)">
+        <a href='WhatisIntrivia.html'>What is Intrivia?</a>
+    </div>
+    <script src="Intrivia.js"></script>
+</body>
+
+</html>
