@@ -54,79 +54,6 @@ function displayquestions(data) {
         }
         g++; console.log("this point 6"); i = 0; j = 0; r2 = 10; n = 4;
     }
-
-    while (i < 4 && j < 3 && n >= 1) {
-        let r = Math.floor(Math.random() * n);
-        if (r != r2) {
-
-            if (i == 0) {
-                document.getElementById(array2[r]).innerHTML = data.results[1].correct_answer;
-            }
-            else {
-                document.getElementById(array2[r]).innerHTML = data.results[1].incorrect_answers[j]; j++;
-            } i++; array2.splice(r, 1); n--;
-        }
-        
-    }
-
-    // while (i < 4 && j < 3 && n>=1) {
-    //     let r = Math.floor(Math.random() * n);
-    //     if(r!=r2){ 
-
-    //     if (i == 0) {
-    //         document.getElementById(array3[r]).innerHTML = data.results[2].correct_answer;
-    //     }
-    //     else {
-    //         document.getElementById(array3[r]).innerHTML = data.results[2].incorrect_answers[j]; j++;
-    //     }i++;array3.splice(r, 1); n--;
-    //     }
-    //     r2=r;      
-    // }
-
-    // while (i < 4 && j < 3 && n>=1) {
-    //     let r = Math.floor(Math.random() * n);
-    //     if(r!=r2){ 
-
-    //     if (i == 0) {
-    //         document.getElementById(array4[r]).innerHTML = data.results[3].correct_answer;
-    //     }
-    //     else {
-    //         document.getElementById(array4[r]).innerHTML = data.results[3].incorrect_answers[j]; j++;
-    //     }i++;array4.splice(r, 1); n--;
-    //     }
-    //     r2=r;      
-    // }
-
-    // while (i < 4 && j < 3 && n>=1) {
-    //     let r = Math.floor(Math.random() * n);
-    //     if(r!=r2){ 
-
-    //     if (i == 0) {
-    //         document.getElementById(array5[r]).innerHTML = data.results[4].correct_answer;
-    //     }
-    //     else {
-    //         document.getElementById(array5[r]).innerHTML = data.results[4].incorrect_answers[j]; j++;
-    //     }i++;array5.splice(r, 1); n--;
-    //     }
-    //     r2=r;      
-    // }
-
-    // while (i < 4 && j < 3 && n>=1) {
-    //     let r = Math.floor(Math.random() * n);
-    //     if(r!=r2){ 
-
-
-    //     if (i == 0) {
-    //         document.getElementById(array6[r]).innerHTML = data.results[5].correct_answer;
-    //     }
-    //     else {
-    //         document.getElementById(array6[r]).innerHTML = data.results[5].incorrect_answers[j]; j++;
-    //     }i++;array6.splice(r, 1); n--;
-    //     }
-    //     r2=r;      
-    // }
-
-
 }
 
 // Change button colour after click
@@ -425,4 +352,8 @@ function scorer() {
     console.log("submitted", score);
 
     sessionStorage.setItem("scorewhat", score);
+}
+
+function sendtoleaderboard() {
+    
 }
