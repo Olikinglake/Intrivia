@@ -291,7 +291,9 @@ let formdata2f = null
 
 function handleSubmit2(event2) {
 
-    console.log("Submitted!", formdata2, formdata2b, formdata2c, formdata2d, formdata2e, formdata2f);
+    console.log("Submitted!", formdata2, formdata2b, formdata2c, formdata2d, formdata2e, formdata2f,(300-count));
+    sessionStorage.setItem("whattime", (200-count)+" seconds");
+    sessionStorage.setItem("whattimeleaderboard", (200-count));
     event2.reset();
 
     if (formdata2 == null || formdata2b == null || formdata2c == null || formdata2d == null || formdata2e == null || formdata2f == null) {
@@ -299,7 +301,6 @@ function handleSubmit2(event2) {
     }
     else {
         scorer();
-        //document.getElementById("bsub") Disable button after first submit.
         window.location = "FinalScore.html";
     }
 
@@ -307,7 +308,7 @@ function handleSubmit2(event2) {
 
 }
 
-var count = 300;
+var count = 200;
 var interval = setInterval(function () {
     document.getElementById('count').innerHTML = count;
     count--;
@@ -352,8 +353,4 @@ function scorer() {
     console.log("submitted", score);
 
     sessionStorage.setItem("scorewhat", score);
-}
-
-function sendtoleaderboard() {
-    
 }

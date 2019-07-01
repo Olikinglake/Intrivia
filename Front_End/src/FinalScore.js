@@ -6,4 +6,8 @@ nameSpan.innerText = nickname.nickname;
 let newscore=sessionStorage.getItem("scorewhat");
     
     document.getElementById("scorehere").innerText=newscore;
+
+let newtime=sessionStorage.getItem("whattime");
+
+    document.getElementById("timehere").innerText=newtime;
     
