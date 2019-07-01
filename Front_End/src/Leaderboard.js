@@ -15,7 +15,7 @@ const leaders = new XMLHttpRequest();
 leaders.onload = function () {
     const parsedScoreData = JSON.parse(leaders.responseText);
     scoredata = parsedScoreData;
-    parsedScoreData.push({"id":3,"time":timeres,"nickname":nickname,"score":newscore});
+    parsedScoreData.push({"id":3,"time":timeres,"nickname":nickname.nickname,"score":newscore});
     displayleaders(parsedScoreData);
 };
 
