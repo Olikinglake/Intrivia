@@ -5,6 +5,6 @@ This is a trivia website that has been made for company intranets. It features a
 
 ## Technologies used
 
-Front end: HTML, CSS (bootstrap) and Vanilla Javascript
-Back end: Java and Spring Boot
+Front end: HTML, CSS (bootstrap) and Vanilla Javascript <br />
+Back end: Java and Spring Boot <br />
 Database: H2
