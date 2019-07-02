@@ -1,6 +1,6 @@
 # Introduction
 
-This is a trivia website that is has been made for company intranets. It features a daily quiz of six questions to be completed individually and a leaderboard to display the top scorers.
+This is a trivia website that has been made for company intranets. It features a daily quiz of six questions to be completed individually and a leaderboard to display the top scorers.
 
 # Technologies used
 
