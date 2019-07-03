@@ -1,13 +1,6 @@
 let nickname = JSON.parse(sessionStorage.getItem("nickname"));
 let newscore=sessionStorage.getItem("scorewhat");
 let timeres=sessionStorage.getItem("whattimeleaderboard");
-// const nameSpan = document.getElementById('nameSpan');
-
-// nameSpan.innerText = nickname.nickname;
-
-// let newscore = sessionStorage.getItem("scorewhat");
-
-// document.getElementById("scorehere").innerText = newscore;
 
 let scoredata = null;
 
@@ -18,9 +11,6 @@ leaders.onload = function () {
     parsedScoreData.push({"id":3,"time":timeres,"nickname":nickname.nickname,"score":newscore});
     displayleaders(parsedScoreData);
 };
-
-
-//Code below is to show database on leaderboard.
 
 leaders.open('GET', 'http://localhost:8080/');
 

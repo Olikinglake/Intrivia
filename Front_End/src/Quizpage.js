@@ -56,7 +56,6 @@ function displayquestions(data) {
     }
 }
 
-// Change button colour after click
 document.getElementById('ba1').onclick = function () {
     this.style.backgroundColor = '#ADD8E6';
     ba2.style.backgroundColor = '#00008B'

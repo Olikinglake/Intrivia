@@ -1,0 +1,1 @@
+select * from Note ORDER BY Score DESC;
