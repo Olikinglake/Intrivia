@@ -40,19 +40,19 @@ function displayquestions(data) {
     i = 0; j = 0; r2 = 10; n = 4; g = 0;
     while (g < 6) {
         while (i < 4 && j < 3 && n >= 1) {
-            let r = Math.floor(Math.random() * n); console.log("this point 6");
-            if (r != r2) { console.log("this point");
+            let r = Math.floor(Math.random() * n);
+            if (r != r2) { 
 
                 if (i == 0) {
-                    document.getElementById(finalarray[g][r]).innerHTML = data.results[g].correct_answer; console.log("this point 2");
+                    document.getElementById(finalarray[g][r]).innerHTML = data.results[g].correct_answer; 
                 }
                 else {
-                    document.getElementById(finalarray[g][r]).innerHTML = data.results[g].incorrect_answers[j]; j++; console.log("this point 3");
-                } i++; finalarray[g].splice(r, 1); n--; console.log("this point 4");
+                    document.getElementById(finalarray[g][r]).innerHTML = data.results[g].incorrect_answers[j]; j++; 
+                } i++; finalarray[g].splice(r, 1); n--; 
             }
             
         }
-        g++; console.log("this point 6"); i = 0; j = 0; r2 = 10; n = 4;
+        g++; i = 0; j = 0; r2 = 10; n = 4;
     }
 }
 
