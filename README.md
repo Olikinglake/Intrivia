@@ -8,3 +8,4 @@ This is a trivia website that has been made for company intranets. It features a
 Front end: HTML, CSS (bootstrap) and Vanilla Javascript <br />
 Back end: Java and Spring Boot <br />
 Database: H2
+API: Open Trivia DB
